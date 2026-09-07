@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="google-site-verification" content="k8s4J0hsEq8aM3EBBA2OinlFlOXCtFUZTToc5oSzvoU" />
-    <title>الدفتر - تطبيق المذكرات والملاحظات</title>
+    <title>سياسة الخصوصية - تطبيق الدفتر | Privacy Policy - Dafftar</title>
     <style>
         body {
             font-family: 'Tajawal', Arial, sans-serif;
             line-height: 1.8;
-            max-width: 1000px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 20px;
             color: #333;
@@ -17,238 +16,235 @@
         }
         header {
             text-align: center;
-            margin-bottom: 40px;
             padding: 20px;
             background-color: #4a6baf;
             color: white;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
         }
-        h1 {
-            margin: 0;
-            font-size: 2.2em;
+        header h1 { margin: 0; font-size: 1.8em; }
+        header p { margin: 5px 0 0; opacity: 0.9; }
+        h2 { color: #4a6baf; border-bottom: 2px solid #4a6baf; padding-bottom: 5px; margin-top: 35px; }
+        .lang-toggle {
+            text-align: center;
+            margin: 15px 0;
         }
-        h2 {
-            color: #4a6baf;
-            border-bottom: 2px solid #4a6baf;
-            padding-bottom: 5px;
-            margin-top: 30px;
-        }
-        .feature-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
-            margin: 20px 0;
-        }
-        .feature-card {
+        .lang-toggle button {
+            padding: 8px 25px;
+            margin: 0 5px;
+            border: 2px solid #4a6baf;
             background: white;
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-        }
-        .feature-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-        .feature-icon {
-            font-size: 2.5em;
             color: #4a6baf;
-            margin-bottom: 10px;
-        }
-        .faq-item {
-            margin-bottom: 15px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            overflow: hidden;
-        }
-        .faq-question {
-            padding: 15px;
-            background: #f1f5ff;
-            font-weight: bold;
+            border-radius: 25px;
             cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            font-weight: bold;
+            transition: 0.3s;
         }
-        .faq-answer {
-            padding: 15px;
-            background: white;
+        .lang-toggle button:hover {
+            background: #4a6baf;
+            color: white;
+        }
+        .lang-toggle button.active {
+            background: #4a6baf;
+            color: white;
+        }
+        .lang-section {
             display: none;
         }
-        .faq-answer.show {
+        .lang-section.active {
             display: block;
         }
-        .contact-info {
-            display: flex;
-            align-items: center;
-            margin: 10px 0;
-        }
-        .contact-icon {
-            margin-left: 10px;
-            color: #4a6baf;
-            width: 25px;
-        }
-        footer {
+        .last-updated { 
+            color: #666; 
+            font-size: 0.9em; 
             text-align: center;
-            margin-top: 50px;
-            padding: 20px;
-            border-top: 1px solid #ddd;
-            font-size: 0.9em;
+            margin-bottom: 20px;
+        }
+        ul, ol { padding-right: 20px; }
+        footer { 
+            text-align: center; 
+            margin-top: 40px; 
+            padding: 20px; 
+            border-top: 1px solid #ddd; 
+            font-size: 0.9em; 
             color: #666;
         }
-        footer a {
-            color: #4a6baf;
-            text-decoration: none;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-        @media (max-width: 768px) {
-            .feature-grid {
-                grid-template-columns: 1fr;
-            }
+        footer a { color: #4a6baf; text-decoration: none; }
+        .contact-info { margin: 5px 0; }
+        @media (max-width: 600px) {
+            .lang-toggle button { padding: 6px 15px; font-size: 0.9em; }
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+
     <header>
-        <h1>مرحبًا بكم في تطبيق الدفتر</h1>
-        <p>تطبيقك الذكي لإدارة المذكرات والملاحظات اليومية</p>
+        <h1>🔒 سياسة الخصوصية<br><small style="font-size:0.6em;">Privacy Policy</small></h1>
+        <p>تطبيق الدفتر - Dafftar App</p>
     </header>
 
-    <section>
-        <h2><i class="fas fa-star"></i> الميزات الرئيسية</h2>
-        <div class="feature-grid">
-            <div class="feature-card">
-                <div class="feature-icon"><i class="fas fa-pen"></i></div>
-                <h3>المذكرات السريعة</h3>
-                <p>إنشاء وتحرير المذكرات بسهولة وسرعة مع إمكانية تنسيق النص</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon"><i class="fas fa-folder-open"></i></div>
-                <h3>تنظيم متقدم</h3>
-                <p>تنظيم المذكرات في مجلدات وفئات مختلفة لتسهيل الوصول إليها</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon"><i class="fas fa-cloud-upload-alt"></i></div>
-                <h3>النسخ الاحتياطي</h3>
-                <p>نسخ احتياطي تلقائي لجميع مذكراتك على Google Drive</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon"><i class="fas fa-search"></i></div>
-                <h3>بحث متقدم</h3>
-                <p>البحث في جميع مذكراتك بسرعة باستخدام كلمات مفتاحية</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon"><i class="fas fa-share-alt"></i></div>
-                <h3>المشاركة</h3>
-                <p>مشاركة مذكراتك مع الآخرين عبر الروابط أو التطبيقات المختلفة</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon"><i class="fas fa-lock"></i></div>
-                <h3>حماية البيانات</h3>
-                <p>تشفير وحماية مذكراتك بكلمة مرور للحفاظ على خصوصيتك</p>
-            </div>
-        </div>
-    </section>
+    <!-- Language Toggle -->
+    <div class="lang-toggle">
+        <button class="active" onclick="switchLang('ar')">🇸🇦 العربية</button>
+        <button onclick="switchLang('en')">🇬🇧 English</button>
+    </div>
 
-    <section>
-        <h2><i class="fas fa-question-circle"></i> الأسئلة الشائعة</h2>
-        <div class="faq-item">
-            <div class="faq-question" onclick="toggleAnswer(this)">
-                كيف يمكنني إنشاء مذكرة جديدة؟
-                <i class="fas fa-chevron-down"></i>
-            </div>
-            <div class="faq-answer">
-                <ol>
-                    <li>افتح تطبيق الدفتر</li>
-                    <li>اضغط على زر (+) في الزاوية اليمنى السفلى</li>
-                    <li>اكتب عنوان المذكرة ومحتواها</li>
-                    <li>اختر المجلد المناسب (اختياري)</li>
-                    <li>اضغط على "حفظ"</li>
-                </ol>
-            </div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-question" onclick="toggleAnswer(this)">
-                كيف يمكنني عمل نسخ احتياطي لمذكراتي؟
-                <i class="fas fa-chevron-down"></i>
-            </div>
-            <div class="faq-answer">
-                <ol>
-                    <li>اذهب إلى إعدادات التطبيق</li>
-                    <li>اختر "النسخ الاحتياطي"</li>
-                    <li>اضغط على "نسخ احتياطي الآن"</li>
-                    <li>اختر حساب Google الذي تريد النسخ عليه</li>
-                    <li>انتظر حتى اكتمال العملية</li>
-                </ol>
-            </div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-question" onclick="toggleAnswer(this)">
-                كيف يمكنني استعادة مذكراتي من النسخ الاحتياطي؟
-                <i class="fas fa-chevron-down"></i>
-            </div>
-            <div class="faq-answer">
-                <ol>
-                    <li>اذهب إلى إعدادات التطبيق</li>
-                    <li>اختر "النسخ الاحتياطي"</li>
-                    <li>اضغط على "استعادة"</li>
-                    <li>اختر ملف النسخ الاحتياطي المطلوب</li>
-                    <li>انتظر حتى اكتمال الاستعادة</li>
-                </ol>
-            </div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-question" onclick="toggleAnswer(this)">
-                هل مذكراتي آمنة وخاصة؟
-                <i class="fas fa-chevron-down"></i>
-            </div>
-            <div class="faq-answer">
-                <p>نعم، جميع مذكراتك مشفرة ومخزنة محلياً على جهازك. يمكنك أيضاً تفعيل قفل التطبيق بكلمة مرور أو بصمة الإصبع لمزيد من الأمان. النسخ الاحتياطية على Google Drive مشفرة أيضاً ولا يمكن لأي شخص آخر الوصول إليها.</p>
-            </div>
-        </div>
-    </section>
+    <!-- ================================ -->
+    <!-- SECTION: ARABIC -->
+    <!-- ================================ -->
+    <div id="lang-ar" class="lang-section active" dir="rtl">
 
-    <section>
-        <h2><i class="fas fa-headset"></i> الدعم الفني</h2>
-        <div class="contact-info">
-            <i class="fas fa-phone contact-icon"></i>
-            <span>+967 712345678</span>
-        </div>
-        <div class="contact-info">
-            <i class="fas fa-envelope contact-icon"></i>
-            <span>moparmage.soft@gmail.com</span>
-        </div>
-        <div class="contact-info">
-            <i class="fas fa-globe contact-icon"></i>
-            <span>www.dafftarsoft.com</span>
-        </div>
-    </section>
+        <p class="last-updated">📅 آخر تحديث: 7 سبتمبر 2026</p>
+
+        <p>نحن في <strong>تطبيق الدفتر</strong> نلتزم بحماية خصوصيتك. توضح هذه السياسة كيفية جمع واستخدام وحماية معلوماتك عند استخدام تطبيقنا.</p>
+
+        <h2>١. المعلومات التي نجمعها</h2>
+        <ul>
+            <li><strong>محتوى المذكرات:</strong> النصوص والملفات التي تقوم بإنشائها داخل التطبيق.</li>
+            <li><strong>معلومات الحساب (اختياري):</strong> عند ربط حساب Google، نجمع البريد الإلكتروني ومعرف المستخدم الأساسي.</li>
+            <li><strong>بيانات الاستخدام:</strong> إحصائيات مجهولة حول استخدام التطبيق (مثل عدد المذكرات، الميزات المستخدمة).</li>
+            <li><strong>معلومات الجهاز:</strong> نوع الجهاز، نظام التشغيل، ومعرف الجهاز الفريد.</li>
+        </ul>
+
+        <h2>٢. كيف نستخدم معلوماتك</h2>
+        <ul>
+            <li>تقديم وتحسين خدمات التطبيق.</li>
+            <li>تمكين ميزة النسخ الاحتياطي على Google Drive.</li>
+            <li>تحليل استخدام التطبيق لتطوير الميزات.</li>
+            <li>إرسال إشعارات تحديثات التطبيق (بموافقتك).</li>
+        </ul>
+
+        <h2>٣. مشاركة المعلومات</h2>
+        <p>نحن <strong>لا نبيع أو نؤجر</strong> معلوماتك الشخصية لأي طرف ثالث. قد نشارك البيانات في الحالات التالية:</p>
+        <ul>
+            <li><strong>موفرو الخدمات:</strong> مع خدمات مثل Google Drive لتخزين النسخ الاحتياطية.</li>
+            <li><strong>الالتزام القانوني:</strong> إذا طلب القانون ذلك.</li>
+        </ul>
+
+        <h2>٤. تخزين البيانات وأمنها</h2>
+        <ul>
+            <li>تخزن مذكراتك <strong>محلياً</strong> على جهازك بشكل مشفر.</li>
+            <li>تشفير النسخ الاحتياطية على Google Drive.</li>
+            <li>يمكنك تفعيل قفل التطبيق بكلمة مرور أو بصمة الإصبع.</li>
+            <li>نستخدم إجراءات أمنية قياسية لحماية بياناتك.</li>
+        </ul>
+
+        <h2>٥. حقوق المستخدم</h2>
+        <ul>
+            <li><strong>الوصول:</strong> يمكنك الوصول إلى جميع مذكراتك في أي وقت.</li>
+            <li><strong>التصحيح:</strong> يمكنك تعديل أو حذف مذكراتك.</li>
+            <li><strong>الحذف:</strong> يمكنك حذف حسابك وبياناتك بالكامل من خلال إعدادات التطبيق.</li>
+            <li><strong>إلغاء الربط:</strong> يمكنك قطع اتصال Google Drive في أي وقت.</li>
+        </ul>
+
+        <h2>٦. خصوصية الأطفال</h2>
+        <p>تطبيق الدفتر غير موجه للأطفال دون سن ١٣ عاماً. لا نجمع عمداً بيانات من الأطفال. إذا اكتشفنا ذلك، سنحذف البيانات فوراً.</p>
+
+        <h2>٧. روابط خارجية</h2>
+        <p>قد يحتوي التطبيق على روابط لمواقع خارجية. نحن غير مسؤولين عن ممارسات الخصوصية لتلك المواقع.</p>
+
+        <h2>٨. تغييرات سياسة الخصوصية</h2>
+        <p>قد نقوم بتحديث هذه السياسة من وقت لآخر. سنخطرك بأي تغييرات جوهرية عبر التطبيق أو البريد الإلكتروني.</p>
+
+        <h2>٩. اتصل بنا</h2>
+        <div class="contact-info"><i class="fas fa-envelope"></i> moparmage.soft@gmail.com</div>
+        <div class="contact-info"><i class="fas fa-phone"></i> +967 712345678</div>
+
+    </div>
+
+    <!-- ================================ -->
+    <!-- SECTION: ENGLISH -->
+    <!-- ================================ -->
+    <div id="lang-en" class="lang-section" dir="ltr">
+
+        <p class="last-updated">📅 Last Updated: September 7, 2026</p>
+
+        <p>At <strong>Dafftar App</strong>, we are committed to protecting your privacy. This policy explains how we collect, use, and safeguard your information when you use our app.</p>
+
+        <h2>1. Information We Collect</h2>
+        <ul>
+            <li><strong>Notes Content:</strong> Text and files you create within the app.</li>
+            <li><strong>Account Information (Optional):</strong> When you link your Google account, we collect your email address and basic user ID.</li>
+            <li><strong>Usage Data:</strong> Anonymous statistics about app usage (e.g., number of notes, features used).</li>
+            <li><strong>Device Information:</strong> Device type, operating system, and unique device identifier.</li>
+        </ul>
+
+        <h2>2. How We Use Your Information</h2>
+        <ul>
+            <li>Provide and improve app services.</li>
+            <li>Enable backup features via Google Drive.</li>
+            <li>Analyze app usage to develop new features.</li>
+            <li>Send app update notifications (with your consent).</li>
+        </ul>
+
+        <h2>3. Information Sharing</h2>
+        <p>We <strong>do not sell or rent</strong> your personal information to third parties. We may share data in the following cases:</p>
+        <ul>
+            <li><strong>Service Providers:</strong> With services like Google Drive for backup storage.</li>
+            <li><strong>Legal Compliance:</strong> If required by law.</li>
+        </ul>
+
+        <h2>4. Data Storage & Security</h2>
+        <ul>
+            <li>Your notes are stored <strong>locally</strong> on your device in encrypted form.</li>
+            <li>Backups on Google Drive are encrypted.</li>
+            <li>You can enable app lock with password or fingerprint.</li>
+            <li>We use standard security measures to protect your data.</li>
+        </ul>
+
+        <h2>5. User Rights</h2>
+        <ul>
+            <li><strong>Access:</strong> You can access all your notes at any time.</li>
+            <li><strong>Correction:</strong> You can edit or delete your notes.</li>
+            <li><strong>Deletion:</strong> You can delete your account and all data via app settings.</li>
+            <li><strong>Unlink:</strong> You can disconnect Google Drive at any time.</li>
+        </ul>
+
+        <h2>6. Children's Privacy</h2>
+        <p>Dafftar is not intended for children under 13. We do not knowingly collect data from children. If we discover such data, we will delete it immediately.</p>
+
+        <h2>7. External Links</h2>
+        <p>The app may contain links to external websites. We are not responsible for the privacy practices of those sites.</p>
+
+        <h2>8. Changes to This Policy</h2>
+        <p>We may update this policy from time to time. We will notify you of any material changes via the app or email.</p>
+
+        <h2>9. Contact Us</h2>
+        <div class="contact-info"><i class="fas fa-envelope"></i> moparmage.soft@gmail.com</div>
+        <div class="contact-info"><i class="fas fa-phone"></i> +967 712345678</div>
+
+    </div>
 
     <footer>
-        <p>إصدار التطبيق: 1.0.0</p>
-        <p>© 2026 تطبيق الدفتر. جميع الحقوق محفوظة</p>
-        <p><a href="dafftar-privacy.html">سياسة الخصوصية</a></p>
+        <p>© 2026 تطبيق الدفتر - Dafftar App. جميع الحقوق محفوظة - All Rights Reserved</p>
+        <p><a href="index.html">🏠 العودة للرئيسية | Back to Home</a></p>
     </footer>
 
     <script>
-        function toggleAnswer(question) {
-            const answer = question.nextElementSibling;
-            const icon = question.querySelector('i:last-child');
+        function switchLang(lang) {
+            // Hide all language sections
+            document.querySelectorAll('.lang-section').forEach(el => {
+                el.classList.remove('active');
+            });
+            // Show selected language
+            document.getElementById('lang-' + lang).classList.add('active');
             
-            answer.classList.toggle('show');
+            // Update button styles
+            document.querySelectorAll('.lang-toggle button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            // Find and activate the clicked button (by onclick attribute)
+            document.querySelectorAll('.lang-toggle button').forEach(btn => {
+                if (btn.textContent.includes(lang === 'ar' ? 'العربية' : 'English')) {
+                    btn.classList.add('active');
+                }
+            });
             
-            if (answer.classList.contains('show')) {
-                icon.classList.remove('fa-chevron-down');
-                icon.classList.add('fa-chevron-up');
-            } else {
-                icon.classList.remove('fa-chevron-up');
-                icon.classList.add('fa-chevron-down');
-            }
+            // Update page direction
+            document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+            document.documentElement.lang = lang === 'ar' ? 'ar' : 'en';
         }
     </script>
 </body>
